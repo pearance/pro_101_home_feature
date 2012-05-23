@@ -49,7 +49,7 @@ function pro_101_home_feature_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 0,
+          'weight' => '0',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -123,13 +123,26 @@ function pro_101_home_feature_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'image',
+          'module' => 'cs_adaptive_image',
           'settings' => array(
             'image_link' => '',
-            'image_style' => '',
+            'styles' => array(
+              'breakpoint_1' => '',
+              'breakpoint_2' => '',
+              'breakpoint_3' => '',
+              'breakpoint_4' => '',
+              'breakpoint_5' => '',
+              'fallback_style' => 'medium',
+              'max_style' => 'large',
+              'style_1' => '',
+              'style_2' => '',
+              'style_3' => '',
+              'style_4' => '',
+              'style_5' => '',
+            ),
           ),
-          'type' => 'image',
-          'weight' => 1,
+          'type' => 'cs_adaptive_image',
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'above',
