@@ -1,6 +1,7 @@
 <?php
 /**
  * @file
+ * Code for the Pro 101 Home Feature feature.
  */
 
-// Drupal needs this blank file.
+include_once 'pro_101_home_feature.features.inc';
