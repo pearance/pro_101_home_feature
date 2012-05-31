@@ -46,9 +46,8 @@ function pro_101_home_feature_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'text',
           'settings' => array(),
-          'type' => 'text_default',
+          'type' => 'hidden',
           'weight' => '0',
         ),
         'teaser' => array(
@@ -58,7 +57,7 @@ function pro_101_home_feature_field_default_fields() {
             'trim_length' => 600,
           ),
           'type' => 'text_summary_or_trimmed',
-          'weight' => 0,
+          'weight' => '3',
         ),
       ),
       'entity_type' => 'node',
@@ -66,7 +65,7 @@ function pro_101_home_feature_field_default_fields() {
       'label' => 'Feature Body',
       'required' => 0,
       'settings' => array(
-        'display_summary' => 0,
+        'display_summary' => 1,
         'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
@@ -110,7 +109,7 @@ function pro_101_home_feature_field_default_fields() {
       ),
       'module' => 'image',
       'settings' => array(
-        'default_image' => '1',
+        'default_image' => 0,
         'uri_scheme' => 'public',
       ),
       'translatable' => '0',
@@ -122,33 +121,20 @@ function pro_101_home_feature_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
-          'module' => 'cs_adaptive_image',
-          'settings' => array(
-            'image_link' => '',
-            'styles' => array(
-              'breakpoint_1' => '',
-              'breakpoint_2' => '',
-              'breakpoint_3' => '',
-              'breakpoint_4' => '',
-              'breakpoint_5' => '',
-              'fallback_style' => 'medium',
-              'max_style' => 'large',
-              'style_1' => '',
-              'style_2' => '',
-              'style_3' => '',
-              'style_4' => '',
-              'style_5' => '',
-            ),
-          ),
-          'type' => 'cs_adaptive_image',
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => '1',
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'image',
+          'settings' => array(
+            'image_link' => 'content',
+            'image_style' => 'flexslider_full',
+          ),
+          'type' => 'image',
+          'weight' => '0',
         ),
       ),
       'entity_type' => 'node',
