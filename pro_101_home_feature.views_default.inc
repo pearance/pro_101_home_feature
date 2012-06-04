@@ -125,7 +125,7 @@ function pro_101_home_feature_views_default_views() {
   $handler->display->display_options['fields']['field_title_graphic']['type'] = 'cs_adaptive_image';
   $handler->display->display_options['fields']['field_title_graphic']['settings'] = array(
     'relationship' => 'none',
-    'ui_name' => 'Feature Image',
+    'ui_name' => 'Image',
     'custom_label' => 0,
     'label' => '',
     'element_label_colon' => 0,
@@ -190,8 +190,8 @@ function pro_101_home_feature_views_default_views() {
       'style_4' => '',
       'breakpoint_5' => '1500',
       'style_5' => '',
-      'max_style' => '',
-      'fallback_style' => '',
+      'max_style' => 'feature-wide',
+      'fallback_style' => 'feature-wide',
     ),
   );
   $handler->display->display_options['fields']['field_title_graphic']['field_api_classes'] = 0;

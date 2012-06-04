@@ -5,3 +5,11 @@
  */
 
 include_once 'pro_101_home_feature.features.inc';
+
+function pro_101_home_feature_views_slideshow_skin_info() {
+  return array(
+    'skinname' => array(
+      'name' => t('generic')
+    )
+  );
+}
