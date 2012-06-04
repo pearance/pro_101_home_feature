@@ -27,9 +27,9 @@ function pro_101_home_feature_views_api() {
 function pro_101_home_feature_node_info() {
   $items = array(
     'featured' => array(
-      'name' => t('Featured'),
+      'name' => t('Feature'),
       'base' => 'node_content',
-      'description' => t('Use <em>Featured</em> to prominently showcase featured content usually on the front page.'),
+      'description' => t('Use <em>Feature</em> to prominently showcase featured content usually on the front page.'),
       'has_title' => '1',
       'title_label' => t('Feature Title'),
       'help' => '',

@@ -14,7 +14,7 @@ function pro_101_home_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_featured';
-  $strongarm->value = 'edit-menu';
+  $strongarm->value = 'edit-submission';
   $export['additional_settings__active_tab_featured'] = $strongarm;
 
   $strongarm = new stdClass;
@@ -38,7 +38,7 @@ function pro_101_home_feature_strongarm() {
   $strongarm->value = array(
     'view_modes' => array(
       'teaser' => array(
-        'custom_settings' => TRUE,
+        'custom_settings' => FALSE,
       ),
       'full' => array(
         'custom_settings' => FALSE,
@@ -59,10 +59,10 @@ function pro_101_home_feature_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '4',
+          'weight' => '6',
         ),
         'redirect' => array(
-          'weight' => '3',
+          'weight' => '5',
         ),
       ),
       'display' => array(),
