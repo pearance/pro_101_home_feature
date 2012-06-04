@@ -9,7 +9,11 @@ include_once 'pro_101_home_feature.features.inc';
 function pro_101_home_feature_views_slideshow_skin_info() {
   return array(
     'skinname' => array(
-      'name' => t('generic')
+      'name' => t('Thumbnail Pager'),
+      'class' => 'thumbnail-pager',
+//    'module' => 'module_name',
+//    'path' => 'skins',
+//    'stylesheets' => array('file.css')
     )
   );
 }
